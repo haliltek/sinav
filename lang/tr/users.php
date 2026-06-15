@@ -1,0 +1,140 @@
+<?php
+
+return [
+    // Sayfa Başlıkları & Üstbilgiler
+    'title_list'              => 'Tüm Kullanıcılar',
+    'title_active'            => 'Aktif Kullanıcılar',
+    'title_banned'            => 'Yasaklı Kullanıcılar',
+    'title_unverified_email'  => 'E-posta Doğrulanmamış Kullanıcılar',
+    'title_unverified_mobile' => 'Mobil Doğrulanmamış Kullanıcılar',
+    'subtitle_list'           => 'Sistemdeki tüm kayıtlı kullanıcıları yönetin ve izleyin.',
+    'title_show'              => 'Konsol: :name',
+    'title_notifications'     => 'Bildirim Gönder',
+    'subtitle_notifications'  => 'Kullanıcı tabanınıza E-posta veya SMS ile mesaj oluşturun ve gönderin.',
+
+    // KPI Etiketleri
+    'kpi_total_users'       => 'Toplam Kullanıcı',
+    'kpi_unverified_emails' => 'Doğrulanmamış E-postalar',
+    'kpi_banned_users'      => 'Yasaklı Kullanıcılar',
+    'kpi_total_transactions' => 'Toplam İşlem',
+    'kpi_exams_taken'       => 'Alınan Sınavlar',
+    'kpi_payment_count'     => 'Ödeme Sayısı',
+
+    // Butonlar
+    'btn_filter'      => 'Filtrele ve Ara',
+    'btn_add_new'     => 'Yeni Ekle',
+    'btn_view_details' => 'Detayları Görüntüle',
+    'btn_edit'        => 'Detayları Düzenle',
+    'btn_back'        => 'Kullanıcı Listesine Dön',
+    'btn_logins'      => 'Girişler',
+    'btn_login_as'    => 'Olarak Giriş Yap',
+    'btn_save'        => 'Değişiklikleri Kaydet',
+    'btn_clear_all'   => 'Tümünü Temizle',
+    'btn_send_now'    => 'Şimdi Gönder',
+    'btn_cancel'      => 'İptal',
+    'btn_apply_filters' => 'Filtreleri Uygula',
+
+    // Tablo Başlıkları
+    'col_user'    => 'KULLANICI',
+    'col_contact' => 'E-POSTA / TELEFON',
+    'col_country' => 'ÜLKE',
+    'col_joined'  => 'KATILIM TARİHİ',
+    'col_action'  => 'İŞLEM',
+    'col_date'    => 'TARİH',
+    'col_plan'    => 'PLAN / ÜRÜN',
+    'col_amount'  => 'TUTAR',
+    'col_status'  => 'DURUM',
+
+    // Form Etiketleri
+    'label_name'               => 'Ad Soyad',
+    'label_email'              => 'E-posta Adresi',
+    'label_mobile'             => 'Cep Telefonu',
+    'label_country'            => 'Ülke',
+    'label_address'            => 'Sokak Adresi',
+    'label_city'               => 'Şehir',
+    'label_state'              => 'İl',
+    'label_zip'                => 'Posta Kodu',
+    'label_role'               => 'Sistem Rolü',
+    'label_password'           => 'Şifre',
+    'label_password_optional'  => 'Yeni Şifre (İsteğe Bağlı)',
+    'label_password_placeholder' => 'Mevcut şifreyi korumak için boş bırakın',
+    'label_search'             => 'Ad veya e-posta ara...',
+    'label_search_users'       => 'KULLANICI ARA',
+    'label_subject'            => 'Konu',
+    'label_message'            => 'Mesaj',
+
+    // Durumlar
+    'status_verified'   => 'Doğrulandı',
+    'status_unverified' => 'Doğrulanmadı',
+    'status_banned'     => 'YASAKLI',
+    'status_active'     => 'AKTİF KULLANICI',
+    'status_paid'       => 'Ödendi',
+    'status_pending'    => 'Beklemede',
+    'status_failed'     => 'Başarısız',
+    'status_open_tickets' => ':count Açık Talep|:count Açık Talep',
+
+    // Bölümler (Göster Sayfası)
+    'sect_profile'       => 'Profil Bilgileri',
+    'sect_transactions'  => 'Son İşlemler',
+    'sect_notifications' => 'Bildirimler',
+    'sect_support'       => 'Destek Geçmişi',
+    'sect_actions'       => 'İşlemler',
+    'sect_login_history' => 'Giriş Geçmişi',
+    'sect_email_status'  => 'E-POSTA DURUMU',
+    'sect_mobile_status' => 'TELEFON DURUMU',
+    'sect_current_plan'  => 'MEVCUT PLAN',
+
+    // Uyarılar & Onaylar
+    'confirm_title'        => 'Emin misiniz?',
+    'confirm_text'         => 'Bu işlem geri alınamaz.',
+    'confirm_yes'          => 'Evet, devam et!',
+    'confirm_delete_title' => 'Bildirim Silinsin mi?',
+    'confirm_delete_text'  => 'Bu işlemi geri alamazsınız!',
+    'confirm_clear_title'  => 'Tüm Bildirimler Temizlensin mi?',
+    'confirm_clear_text'   => 'Bu işlem bu kullanıcıya ait tüm bildirimleri kalıcı olarak kaldıracak.',
+    'confirm_ban_title'    => 'Kullanıcı Yasaklansın mı?',
+    'confirm_lift_ban_title' => 'Yasak Kaldırılsın mı?',
+    'confirm_ban_text'     => 'Bu kullanıcının durumunu değiştirmek istediğinizden emin misiniz?',
+    'confirm_send_title'   => 'Gönderimi Onayla',
+    'confirm_send_text'    => 'Bu bildirim kampanyasını başlatmak üzeresiniz.',
+    'action_ban'           => 'Kullanıcıyı Yasakla',
+    'action_unban'         => 'Yasağı Kaldır',
+
+    // Mesajlar
+    'msg_user_created'       => 'Kullanıcı başarıyla oluşturuldu.',
+    'msg_user_updated'       => 'Kullanıcı başarıyla güncellendi.',
+    'msg_user_banned'        => 'Kullanıcı yasaklandı.',
+    'msg_user_activated'     => 'Kullanıcı aktive edildi.',
+    'msg_plan_assigned'      => 'Plan başarıyla atandı.',
+    'msg_unauthorized_role'  => 'Yetkisiz rol atama.',
+    'msg_unauthorized_action' => 'Yetkisiz işlem.',
+    'msg_cannot_ban'         => 'Bu hesap yasaklanamaz.',
+    'msg_cannot_impersonate' => 'Süper Yönetici olarak giriş yapılamaz.',
+
+    // Bildirimler Sayfası
+    'step_audience'        => '1. Kitle Seçin',
+    'opt_all_users'        => 'Tüm Kullanıcılar',
+    'opt_all_users_desc'   => 'Herkese gönder',
+    'opt_specific_users'   => 'Belirli Kullanıcılar',
+    'opt_specific_users_desc' => 'Manuel seç',
+    'step_channels'        => '2. İletişim Kanalları',
+    'chan_email'           => 'E-posta Bildirimi',
+    'chan_sms'             => 'SMS Bildirimi',
+    'step_content'         => 'E-posta İçeriği',
+    'label_body'           => 'Mesaj İçeriği',
+    'label_sms_content'    => 'SMS İçeriği',
+
+    // Boş Durumlar
+    'empty_title'         => 'Kullanıcı bulunamadı',
+    'empty_subtitle'      => 'Arama veya filtreleme seçeneklerinizi ayarlamayı deneyin.',
+    'empty_transactions'  => 'İşlem geçmişi bulunamadı.',
+    'empty_notifications' => 'Son bildirim bulunamadı.',
+    'empty_support'       => 'Destek talebi bulunamadı.',
+    'empty_logins'        => 'Giriş geçmişi mevcut değil.',
+
+    // Modaller
+    'modal_create_title' => 'Yeni Sistem Kullanıcısı Oluştur',
+    'modal_create_btn'   => 'Kullanıcı Oluştur',
+    'modal_edit_title'   => 'Kullanıcıyı Düzenle',
+    'modal_edit_btn'     => 'Kullanıcıyı Güncelle',
+];

@@ -1,0 +1,27 @@
+Version 1.2.7 – Update Log
+Release Date: 8 May 2026
+New Features
+Dynamic Registration Custom Fields: Introduced a powerful engine allowing administrators to create unlimited custom fields (Text, Select/Dropdown, Attachments) for the signup process. Perfect for collecting data like College Name, Qualification, or Degree.
+Job Board Module Integration: A full-featured Job Board system is now built into the platform. Administrators can post job opportunities, and students can view and apply for listings directly from their personalized dashboard.
+Modular Coding Assets Addon System: Implemented a new architecture for coding assets. These now function as modular addons, allowing for easy activation/deactivation without modifying the core system files.
+Bulk Student Data Export: Admins can now perform bulk downloads of student records, including all custom registration data, in a single action for offline analysis and reporting.
+Core System & Database Updates
+Schema Enhancement (custom_fields): Added a new JSON-supported column to the users table to securely store dynamic registration data.
+Database Refinement (phone): Added a dedicated, unique phone column to the core user table to improve authentication and SMS-based features.
+Auth Architecture Redesign: Completely overhauled the authentication logic to handle dynamic validation and multi-part data (file uploads) during user registration.
+System Scalability: Optimized core logic to support the simultaneous running of the Job Board and multiple Addon modules without performance degradation.
+Improvements & UI/UX
+Fixed Registration Viewport Scrolling: Resolved a critical UI issue where adding multiple custom fields would prevent the registration page from scrolling. The layout is now fully responsive and scroll-friendly.
+Advanced User Management (Admin Panel): Upgraded the Admin "User Show" section. Administrators can now view, download submitted attachments, and edit a student's custom registration fields directly from the profile.
+File Upload Handling: Improved secure storage handling for student-submitted attachments (CVs, IDs, Certificates), ensuring they are stored in protected, organized directories.
+Admin Workflow Optimization: Reduced the number of clicks required to manage students, approve job listings, and configure system addons.
+Bug Fixes
+Authentication Redirect Logic: Resolved an issue where users were occasionally redirected to incorrect pages after login based on specific roles.
+Bulk Download Accuracy: Fixed a data glitch where bulk student exports would occasionally skip records under heavy server loads.
+Addon Stability Fix: Resolved minor conflicts when multiple coding asset addons were activated at the same time.
+CSS Consistency: Corrected layout shifts on the login and registration pages across Safari and mobile browsers.
+Technical Update Instructions for Existing Users:
+File Update: Replace the existing files with the new version 1.2.7 files.
+Database Migration: Run php artisan migrate to automatically add the phone and custom_fields columns.
+Storage Link: Ensure you run php artisan storage:link to enable the new dynamic attachment viewing feature.
+Clear Cache: Run php artisan optimize:clear to ensure the new CSS scrolling fixes and dynamic field logic are active.

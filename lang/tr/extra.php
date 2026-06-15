@@ -1,0 +1,78 @@
+<?php
+
+return [
+    // Uygulama Sayfası
+    'app_title'    => 'Uygulama Sağlığı',
+    'app_subtitle' => 'Uygulama yapılandırması, veritabanı durumu ve dosya sistemi izinlerine genel bakış.',
+    'core_config'  => 'Temel Yapılandırma',
+    'app_name'     => 'Uygulama Adı',
+    'app_url'      => 'Uygulama URL\'si',
+    'environment'  => 'Ortam',
+    'debug_mode'   => 'Hata Ayıklama Modu',
+    'timezone'     => 'Saat Dilimi',
+    'locale'       => 'Yerel Ayar',
+    'db_status'    => 'Veritabanı Durumu',
+    'db_connected' => 'Bağlı',
+    'db_connection' => 'Bağlantı Türü',
+    'db_size'      => 'Toplam Boyut',
+    'permissions'  => 'Dosya Sistemi İzinleri',
+    'perm_hint'    => 'Bu dizinlerin uygulamanın düzgün çalışması için 775 veya 755 izinlerine sahip olduğundan emin olun.',
+    'enabled'      => 'Etkin',
+    'disabled'     => 'Devre Dışı',
+    'true'         => 'Doğru',
+    'false'        => 'Yanlış',
+
+    // Sunucu Sayfası
+    'server_title'    => 'Sunucu Ortamı',
+    'server_subtitle' => 'Temel sunucu ve PHP yapılandırması hakkında teknik detaylar.',
+    'php_config'      => 'PHP Yapılandırması',
+    'memory_limit'    => 'Bellek Limiti',
+    'max_execution'   => 'Maksimum Yürütme',
+    'upload_max'      => 'Max Yükleme Boyutu',
+    'post_max'        => 'Max POST Boyutu',
+    'loaded_ext'      => 'Yüklü Uzantılar',
+    'installed'       => 'Yüklü',
+    'host_info'       => 'Ana Bilgisayar Bilgisi',
+    'ip_address'      => 'IP Adresi',
+    'protocol'        => 'Protokol',
+    'software'        => 'Yazılım',
+
+    // Önbellek Sayfası
+    'cache_title'     => 'Önbellek Yönetimi',
+    'cache_subtitle'  => 'Yapılandırma sorunlarını çözmek veya görünümleri güncellemek için geçici veri dosyalarını temizleyin.',
+    'active_drivers'  => 'Aktif Sürücüler',
+    'sys_cache'       => 'Sistem Önbelleği',
+    'session_store'   => 'Oturum Deposu',
+    'queue_worker'    => 'Kuyruk İşçisi',
+    'mail_system'     => 'Posta Sistemi',
+    'quick_actions'   => 'Hızlı İşlemler',
+    'btn_optimize'    => 'Sistemi Optimize Et',
+    'app_cache'       => 'Uygulama Önbelleği',
+    'app_cache_desc'  => 'Genel uygulama verilerini temizler.',
+    'route_cache'     => 'Rota Önbelleği',
+    'route_cache_desc' => '404/Rota hatalarını düzeltir.',
+    'config_cache'    => 'Yapılandırma Önbelleği',
+    'config_cache_desc' => '.env ayarlarını yeniden yükler.',
+    'view_cache'      => 'Görünüm / Blade Önbelleği',
+    'view_cache_desc' => 'Derlenmiş kullanıcı arayüzünü yeniler.',
+
+    // Güncelleme Sayfası
+    'update_title'        => 'Güncelleme Merkezi',
+    'update_subtitle'     => 'Sistem güncellemelerini yönetin ve değişiklik günlüklerini görüntüleyin.',
+    'btn_check_update'    => 'Güncellemeleri Kontrol Et',
+    'up_to_date'          => 'Güncelsiniz!',
+    'current_ver'         => 'Şu anda çalışan sürüm',
+    'last_checked'        => 'Son kontrol:',
+
+    'manual_update_title' => 'Manuel Güncelleme',
+    'manual_update_desc'  => 'Geliştirici tarafından sağlanan en son güncelleme paketini yükleyin. Sistem dosyaları otomatik olarak çıkartacak ve veritabanı migrasyonlarını çalıştıracaktır.',
+    'supported_file'      => 'Desteklenen dosya',
+    'max_size'            => 'Maksimum',
+    'important_label'     => 'Önemli',
+    'update_warning'      => 'Bu işlem temel sistem dosyalarının üzerine yazacaktır. Devam etmeden önce tam veritabanı ve dosya yedeği aldığınızdan emin olun.',
+    'btn_upload_update'   => 'Yükle ve Sistemi Güncelle',
+
+    // JS Uyarıları
+    'js_confirm_update' => 'Güncellemeyi yapmak istediğinizden kesinlikle emin misiniz? Bu işlem geri alınamaz ve sistem dosyalarının üzerine yazacaktır.',
+    'js_processing'     => 'İşleniyor...',
+];

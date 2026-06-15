@@ -1,0 +1,24 @@
+===================================================================
+                  UPDATE INSTRUCTIONS - VERSION 1.2.7
+===================================================================
+Product:      ZiExam AI - Online Exam System
+Version 1.2.7 – Update Log
+Release Date: 08 May 2026
+===================================================================
+
+IMPORTANT: READ BEFORE UPDATING
+
+Delete this file from your database->migrations 2026_01_25_173522_add_menu_fields_to_addons_table.php if avaialbe
+-------------------------------------------------------------------
+1. BACKUP YOUR DATA:
+   Before applying this update, please take a full backup of your 
+   database and your project files. This ensures you can restore 
+   your system if anything goes wrong during the process.
+
+2. CUSTOMIZATIONS:
+   If you have modified any core files in the "app", "resources", 
+   or "routes" folders, this update will overwrite them. Please 
+   merge your changes manually if necessary.
+
+To perform the update, go to the Extra section from the sidebar.
+Then navigate to Update → Upload, select the file zi_exam_update_v.1.0.5.zip, and click on the Update button to proceed.

@@ -1,0 +1,77 @@
+<?php
+
+return [
+    'save_settings' => 'Ayarları Kaydet',
+    'save_gateway'  => 'Ağ Geçidi Ayarlarını Kaydet',
+    'enable'        => 'Etkinleştir',
+
+    'currency' => [
+        'title'          => 'Para Birimi Yapılandırması',
+        'desc'           => 'Global para birimi formatını, sembollerini ve görüntüleme seçeneklerini yapılandırın.',
+        'global_currency' => 'Global Para Birimi',
+        'global_desc'    => 'Tüm işlemler için ana para birimini ayarlayın.',
+        'primary'        => 'Ana Para Birimi',
+        'custom_opt'     => '--- ÖZEL PARA BİRİMİ ---',
+        'custom_code'    => 'Özel Kod (ör. TRY)',
+        'custom_symbol'  => 'Özel Sembol (ör. ₺)',
+        'position'       => 'Sembol Konumu',
+        'pos_before'     => 'Tutardan Önce (₺100)',
+        'pos_after'      => 'Tutardan Sonra (100₺)',
+        'pos_before_space' => 'Önce Boşluklu (₺ 100)',
+        'pos_after_space'  => 'Sonra Boşluklu (100 ₺)',
+        'decimal_sep'    => 'Ondalık Ayraç',
+        'decimal_help'   => 'Ondalık için kullanılan karakter (ör. 10.00).',
+        'thousands_sep'  => 'Binlik Ayraç',
+        'thousands_help' => 'Binlik için kullanılan karakter (ör. 1.000).',
+    ],
+
+    'gateways' => [
+        'stripe' => [
+            'title'          => 'Stripe Yapılandırması',
+            'desc'           => 'Stripe üzerinden kredi kartı ödemelerini kabul edin.',
+            'public_key'     => 'Stripe Genel Anahtarı',
+            'secret_key'     => 'Stripe Gizli Anahtarı',
+            'webhook_secret' => 'Stripe Webhook Gizli Anahtarı',
+            'webhook_url'    => 'Webhook URL:',
+        ],
+        'paypal' => [
+            'title'      => 'PayPal Yapılandırması',
+            'desc'       => 'PayPal veya PayPal Credit üzerinden ödeme kabul edin.',
+            'client_id'  => 'PayPal İstemci Kimliği',
+            'secret_key' => 'PayPal Gizli Anahtarı',
+            'env'        => 'Ortam',
+            'sandbox'    => 'Sandbox (Test)',
+            'live'       => 'Canlı (Üretim)',
+        ],
+        'razorpay' => [
+            'title'      => 'Razorpay Yapılandırması',
+            'desc'       => 'Hindistan için popüler ödeme ağ geçidi.',
+            'key_id'     => 'Razorpay Anahtar Kimliği',
+            'key_secret' => 'Razorpay Gizli Anahtarı',
+        ],
+        'offline' => [
+            'title'             => 'Çevrimdışı/Banka Transferi',
+            'desc'              => 'Kullanıcıların doğrudan ödeme yapmasına izin verin (manuel onay gerektirir).',
+            'holder_name'       => 'Hesap Sahibi Adı',
+            'bank_name'         => 'Banka Adı',
+            'acc_number'        => 'Hesap Numarası / IBAN',
+            'swift_code'        => 'SWIFT Kodu',
+            'instructions'      => 'Ek Talimatlar veya Bölgesel Bankalar',
+            'instructions_help' => 'Bu alanı ikincil ödeme yöntemleri veya bölgesel talimatlar için kullanın.',
+            'default_inst'      => 'Örnek: Türkiye içi ödemeler için Banka A kullanın. Uluslararası ödemeler için yukarıdaki detaylara bakın.',
+        ],
+    ],
+
+    'tax' => [
+        'title'             => 'Vergi Yapılandırması',
+        'desc'              => 'İşlemlere uygulanan KDV veya Satış Vergisi kurallarını yapılandırın.',
+        'global_rules'      => 'Global Vergi Kuralları',
+        'global_rules_desc' => 'Ödeme sırasında verginin nasıl hesaplanacağını tanımlayın.',
+        'name'              => 'Vergi Adı',
+        'name_help'         => 'Faturalarda görüntülenen etiket.',
+        'rate'              => 'Varsayılan Vergi Oranı',
+        'rate_help'         => 'Ara toplama eklenen yüzde.',
+        'inclusive'         => 'Vergiye Dahil Fiyatlandırma',
+        'inclusive_help'    => 'Etkinleştirilirse, ürün fiyatları vergi tutarını içerecektir.',
+    ],
+];

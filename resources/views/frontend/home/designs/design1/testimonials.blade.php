@@ -24,38 +24,40 @@
 
     // Helper to determine image URL
     $getAvatarUrl = function($path) {
-        if (empty($path)) return asset('assets/frontend/images/avatars/default.jpg'); 
+        if (empty($path)) return asset('assets/images/avatars/default.jpg'); 
         if (\Illuminate\Support\Str::startsWith($path, ['http://', 'https://'])) {
             return $path;
         }
-        return Storage::url($path); // Assuming user-uploaded avatars go through Storage::url
+        if (\Illuminate\Support\Str::startsWith($path, 'assets/')) {
+            return asset($path);
+        }
+        return Storage::url($path);
     };
 
     // Fallback data
     $fallbackTestimonials = [
-        // ... (your fallback data remains the same) ...
         [
             'name' => 'Ananya Rao', 
             'role' => 'Academic Coordinator', 
-            'avatar' => 'assets/frontend/images/avatars/user-1.jpg',
+            'avatar' => 'assets/images/avatars/user-1.jpg',
             'review' => 'We went from manual grading to instant evaluation overnight. The platform completely transformed how we conduct assessments.'
         ],
         [
             'name' => 'Daniel Moore', 
             'role' => 'Training Lead', 
-            'avatar' => 'assets/frontend/images/avatars/user-2.jpg',
+            'avatar' => 'assets/images/avatars/user-2.jpg',
             'review' => 'Creating exams used to take days. Now we generate structured, high-quality tests in minutes without compromising standards.'
         ],
         [
             'name' => 'Meera Patel', 
             'role' => 'Program Manager', 
-            'avatar' => 'assets/frontend/images/avatars/user-3.jpg',
+            'avatar' => 'assets/images/avatars/user-3.jpg',
             'review' => 'The analytics alone are worth it. We finally understand how students are performing across every exam.'
         ],
         [
             'name' => 'Lucas Bennett', 
             'role' => 'EdTech Founder', 
-            'avatar' => 'assets/frontend/images/avatars/user-4.jpg',
+            'avatar' => 'assets/images/avatars/user-4.jpg',
             'review' => 'Launching paid exams was seamless. Subscriptions, access control, and reporting—all in one place.'
         ]
     ];

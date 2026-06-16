@@ -20,7 +20,7 @@ services:
     container_name: sinav_nginx
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8000:80"
     volumes:
       - .:/var/www/sinav
       - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf

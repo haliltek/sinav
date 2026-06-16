@@ -53,6 +53,9 @@ services:
     image: nousresearch/hermes-agent:latest
     container_name: hermes_agent
     restart: unless-stopped
+    command: ["gateway", "run"]
+    tty: true
+    stdin_open: true
     ports:
       - "8642:8642"
     volumes:

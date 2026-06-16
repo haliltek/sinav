@@ -57,6 +57,103 @@
             <h2 class="page-title">{{ __('auth.login.welcome') }}</h2>
             <p class="page-sub">{{ __('auth.login.welcome_sub') }}</p>
 
+            <!-- Quick Demo Login Block -->
+            <style>
+                .demo-login-card {
+                    border: 1px dashed #cbd5e1;
+                    border-radius: 12px;
+                    padding: 16px;
+                    background-color: #f8fafc;
+                    margin-bottom: 24px;
+                }
+                .demo-login-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    color: #475569;
+                    text-transform: uppercase;
+                    margin-bottom: 12px;
+                }
+                .demo-login-header i {
+                    color: #eab308;
+                }
+                .demo-login-buttons {
+                    display: flex;
+                    gap: 10px;
+                }
+                .demo-btn {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 8px;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 0.85rem;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                }
+                .demo-btn i {
+                    font-size: 1.2rem;
+                }
+                .btn-admin {
+                    background-color: #ef4444;
+                }
+                .btn-admin:hover {
+                    background-color: #dc2626;
+                    transform: translateY(-1px);
+                }
+                .btn-teacher {
+                    background-color: #6366f1;
+                }
+                .btn-teacher:hover {
+                    background-color: #4f46e5;
+                    transform: translateY(-1px);
+                }
+                .btn-student {
+                    background-color: #10b981;
+                }
+                .btn-student:hover {
+                    background-color: #059669;
+                    transform: translateY(-1px);
+                }
+            </style>
+
+            <div class="demo-login-card">
+                <div class="demo-login-header">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>{{ app()->getLocale() == 'tr' ? 'HIZLI DEMO GİRİŞİ' : 'QUICK DEMO LOGIN' }}</span>
+                </div>
+                <div class="demo-login-buttons">
+                    <button type="button" class="demo-btn btn-admin" onclick="fillAndSubmit('admin@sc.com')">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>{{ app()->getLocale() == 'tr' ? 'Yönetici' : 'Admin' }}</span>
+                    </button>
+                    <button type="button" class="demo-btn btn-teacher" onclick="fillAndSubmit('ogretmen@sc.com')">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span>{{ app()->getLocale() == 'tr' ? 'Öğretmen' : 'Teacher' }}</span>
+                    </button>
+                    <button type="button" class="demo-btn btn-student" onclick="fillAndSubmit('ogrenci@sc.com')">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>{{ app()->getLocale() == 'tr' ? 'Öğrenci' : 'Student' }}</span>
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                function fillAndSubmit(email) {
+                    document.getElementById('email').value = email;
+                    document.getElementById('password').value = '123456';
+                    document.getElementById('loginForm').submit();
+                }
+            </script>
+
             @if ($errors->any())
                 <div class="alert-error">
                     <i class="fa-solid fa-circle-exclamation"></i>
@@ -64,18 +161,18 @@
                 </div>
             @endif
 
-            <form action="{{ route('login') }}" method="POST">
+            <form id="loginForm" action="{{ route('login') }}" method="POST">
                 @csrf
                 
                 <div class="input-group">
 
                     <label class="label">{{ __('auth.email_label') }}</label>
-                    <input type="email" name="email" class="input" placeholder="name@company.com" value="{{ old('email') }}" required autofocus>
+                    <input type="email" id="email" name="email" class="input" placeholder="name@company.com" value="{{ old('email') }}" required autofocus>
                 </div>
 
                 <div class="input-group">
                     <label class="label">{{ __('auth.password_label') }}</label>
-                    <input type="password" name="password" class="input" placeholder="••••••••" required>
+                    <input type="password" id="password" name="password" class="input" placeholder="••••••••" required>
                 </div>
 
                 <div class="form-actions">

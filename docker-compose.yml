@@ -50,7 +50,7 @@ services:
 
   # Hermes Agent Service
   hermes:
-    image: ghcr.io/nousresearch/hermes-agent:latest
+    image: nousresearch/hermes-agent:latest
     container_name: hermes_agent
     restart: unless-stopped
     ports:

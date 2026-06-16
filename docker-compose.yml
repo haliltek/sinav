@@ -48,7 +48,7 @@ services:
     networks:
       - sinav-network
 
-  # Hermes Agent Service
+  # Hermes Agent Service (Gateway)
   hermes:
     image: nousresearch/hermes-agent:latest
     container_name: hermes_agent
@@ -62,6 +62,23 @@ services:
       - hermes_data:/home/node/.hermes
     networks:
       - sinav-network
+
+  # Hermes Dashboard Web UI
+  hermes-dashboard:
+    image: nousresearch/hermes-agent:latest
+    container_name: hermes_dashboard
+    restart: unless-stopped
+    command: ["dashboard", "--host", "0.0.0.0", "--insecure"]
+    tty: true
+    stdin_open: true
+    ports:
+      - "9119:9119"
+    volumes:
+      - hermes_data:/home/node/.hermes
+    networks:
+      - sinav-network
+    depends_on:
+      - hermes
 
 networks:
   sinav-network:

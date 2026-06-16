@@ -121,6 +121,102 @@ $pagesData = [
                 ]
             ]
         ]
+    ],
+    [
+        'title' => 'Nasıl Çalışır?',
+        'slug' => 'nasil-calisir',
+        'meta_title' => 'Nasıl Çalışır? - Sınav Center',
+        'meta_description' => 'Sınav Center platformunda sınav oluşturmak, yönetmek ve katılmak çok kolay.',
+        'is_published' => true,
+        'sections' => [
+            [
+                'type' => 'hero',
+                'sort_order' => 0,
+                'content' => [
+                    'heading' => 'Nasıl Çalışır?',
+                    'subtext' => 'Sınav Center platformunda sınav oluşturmak, yönetmek ve katılmak çok kolay.'
+                ]
+            ],
+            [
+                'type' => 'text',
+                'sort_order' => 1,
+                'content' => [
+                    'body' => '<h3>1. Sınavınızı Oluşturun</h3><p>Soru bankasından soruları seçin veya yapay zeka yardımıyla yeni sorular oluşturun.</p><h3>2. Adayları Davet Edin</h3><p>Öğrencilerinizi e-posta veya sınav kodları ile sınava davet edin.</p><h3>3. Yapay Gözetmen Desteği</h3><p>Sınav esnasında tarayıcı kilitleri ve yapay zeka gözetimi aktif olsun.</p><h3>4. Raporları İnceleyin</h3><p>Sınav tamamlandığında yapay zeka tarafından hazırlanan performans analiz raporlarına anında erişin.</p>'
+                ]
+            ]
+        ]
+    ],
+    [
+        'title' => 'Nasıl Çalışır? (Türkçe Karakterli)',
+        'slug' => 'nasıl-çalışır',
+        'meta_title' => 'Nasıl Çalışır? - Sınav Center',
+        'meta_description' => 'Sınav Center platformunda sınav oluşturmak, yönetmek ve katılmak çok kolay.',
+        'is_published' => true,
+        'sections' => [
+            [
+                'type' => 'hero',
+                'sort_order' => 0,
+                'content' => [
+                    'heading' => 'Nasıl Çalışır?',
+                    'subtext' => 'Sınav Center platformunda sınav oluşturmak, yönetmek ve katılmak çok kolay.'
+                ]
+            ],
+            [
+                'type' => 'text',
+                'sort_order' => 1,
+                'content' => [
+                    'body' => '<h3>1. Sınavınızı Oluşturun</h3><p>Soru bankasından soruları seçin veya yapay zeka yardımıyla yeni sorular oluşturun.</p><h3>2. Adayları Davet Edin</h3><p>Öğrencilerinizi e-posta veya sınav kodları ile sınava davet edin.</p><h3>3. Yapay Gözetmen Desteği</h3><p>Sınav esnasında tarayıcı kilitleri ve yapay zeka gözetimi aktif olsun.</p><h3>4. Raporları İnceleyin</h3><p>Sınav tamamlandığında yapay zeka tarafından hazırlanan performans analiz raporlarına anında erişin.</p>'
+                ]
+            ]
+        ]
+    ],
+    [
+        'title' => 'İletişim',
+        'slug' => 'iletisim',
+        'meta_title' => 'İletişim - Sınav Center',
+        'meta_description' => 'Sınav Center iletişim bilgileri, adres ve destek hatları.',
+        'is_published' => true,
+        'sections' => [
+            [
+                'type' => 'hero',
+                'sort_order' => 0,
+                'content' => [
+                    'heading' => 'İletişim',
+                    'subtext' => 'Her türlü soru, görüş ve destek talepleriniz için bizimle iletişime geçin.'
+                ]
+            ],
+            [
+                'type' => 'text',
+                'sort_order' => 1,
+                'content' => [
+                    'body' => '<p><strong>Adres:</strong> Bornova, İzmir</p><p><strong>E-posta:</strong> info@sinavcenter.tr</p><p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</p>'
+                ]
+            ]
+        ]
+    ],
+    [
+        'title' => 'İletişim (Türkçe Karakterli)',
+        'slug' => 'iletişim',
+        'meta_title' => 'İletişim - Sınav Center',
+        'meta_description' => 'Sınav Center iletişim bilgileri, adres ve destek hatları.',
+        'is_published' => true,
+        'sections' => [
+            [
+                'type' => 'hero',
+                'sort_order' => 0,
+                'content' => [
+                    'heading' => 'İletişim',
+                    'subtext' => 'Her türlü soru, görüş ve destek talepleriniz için bizimle iletişime geçin.'
+                ]
+            ],
+            [
+                'type' => 'text',
+                'sort_order' => 1,
+                'content' => [
+                    'body' => '<p><strong>Adres:</strong> Bornova, İzmir</p><p><strong>E-posta:</strong> info@sinavcenter.tr</p><p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</p>'
+                ]
+            ]
+        ]
     ]
 ];
 

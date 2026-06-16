@@ -39,6 +39,7 @@ Route::middleware(['web', CheckInstallation::class])->group(function () {
     require __DIR__.'/admin.php';
 
     Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
+    Route::redirect('/anasayfa', '/');
     Route::get('/exams', [HomeController::class, 'exams'])->name('exams.list');
     Route::get('lang/{code}', [LanguageController::class, 'switch'])->name('lang.switch');
 

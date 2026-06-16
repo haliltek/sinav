@@ -1,37 +1,15 @@
 <nav class="sidebar">
     <div class="sidebar-header">
-        <a href="{{ route('admin.dashboard') }}" class="brand">
-            @php
-                $settings = $settings ?? $gs ?? [];
-                $appName = $settings['app_name'] ?? __('app.name');
-            @endphp
-            
-            <div class="brand-content-light">
-                @if(!empty($settings['app_logo_light']))
-                    <img src="{{ Storage::url($settings['app_logo_light']) }}" alt="{{ $appName }}" class="brand-logo-img">
-                @else
-                    <div class="brand-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10v6"/><path d="M20 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
-                        </svg>
-                    </div>
-                    <span class="brand-text">{{ $appName }}</span>
-                @endif
+        <a href="{{ route('admin.dashboard') }}" class="brand text-decoration-none">
+            <div class="brand-content-light d-flex align-items-center gap-2">
+                <i class="fa-solid fa-layer-group text-primary fa-lg"></i>
+                <span class="brand-text" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #1e293b; font-size: 1.15rem;">Sınav Center</span>
             </div>
 
-            <div class="brand-content-dark">
-                @if(!empty($settings['app_logo_dark']))
-                    <img src="{{ Storage::url($settings['app_logo_dark']) }}" alt="{{ $appName }}" class="brand-logo-img">
-                @else
-                    <div class="brand-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10v6"/><path d="M20 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
-                        </svg>
-                    </div>
-                    <span class="brand-text text-white">{{ $appName }}</span>
-                @endif
+            <div class="brand-content-dark d-flex align-items-center gap-2">
+                <i class="fa-solid fa-layer-group text-primary fa-lg"></i>
+                <span class="brand-text text-white" style="font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem;">Sınav Center</span>
             </div>
-
         </a>
         <button class="mobile-close-btn" id="mobile-close">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

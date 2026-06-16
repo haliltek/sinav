@@ -6,23 +6,12 @@
 
 <div class="sidebar-brand">
     <a href="{{ route('user.dashboard') }}" class="d-flex align-items-center gap-2 text-decoration-none">
-        @if(!empty($config['app_logo_light']))
-            <img src="{{ Storage::url($config['app_logo_light']) }}" 
-                 alt="{{ __('frontend.app_logo_alt', ['name' => $config['app_name'] ?? config('app.name')]) }}" 
-                 class="img-fluid sidebar-logo-img">
-        @else
-            <div class="d-flex align-items-center gap-3">
-                <div class="sidebar-logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="8.5" cy="7" r="4"></circle>
-                        <line x1="20" y1="8" x2="20" y2="14"></line>
-                        <line x1="23" y1="11" x2="17" y2="11"></line>
-                    </svg>
-                </div>
-                <span class="sidebar-brand-text">{{ $config['app_name'] ?? config('app.name') }}</span>
+        <div class="d-flex align-items-center gap-3">
+            <div class="sidebar-logo-icon">
+                <i class="fa-solid fa-layer-group text-primary fa-lg"></i>
             </div>
-        @endif
+            <span class="sidebar-brand-text" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #1e293b; font-size: 1.15rem;">Sınav Center</span>
+        </div>
     </a>
 </div>
 

@@ -13,17 +13,11 @@
         <div class="footer-top">
             
             <div class="footer-widget brand-widget">
-                <a href="{{ route('frontend.home') }}" class="footer-logo">
-                    @if(!empty($settings['footer_logo']))
-                        <img src="{{ Storage::url($settings['footer_logo']) }}" alt="{{ config('app.name') }}" class="footer-brand-img" style="max-height: 45px;">
-                    @elseif(!empty($settings['app_logo_light']))
-                        <img src="{{ Storage::url($settings['app_logo_light']) }}" alt="{{ config('app.name') }}" class="footer-brand-img" style="max-height: 45px;">
-                    @else
-                        <div class="footer-brand-text">
-                            <i class="fa-solid fa-layer-group text-primary me-2"></i>
-                            <span class="text-white">Zi</span><span class="text-primary">Exam</span><span class="text-white">AI</span>
-                        </div>
-                    @endif
+                <a href="{{ route('frontend.home') }}" class="footer-logo text-decoration-none">
+                    <div class="footer-brand-text">
+                        <i class="fa-solid fa-layer-group text-primary me-2"></i>
+                        <span class="text-white" style="font-family: 'Outfit', sans-serif;">Sınav</span><span class="text-primary" style="font-family: 'Outfit', sans-serif;">Center</span>
+                    </div>
                 </a>
                 <p class="footer-desc mt-3">
                     @dynamicTrans('footer_about_text', $settings)

@@ -44,17 +44,11 @@
     <div class="container d-flex align-items-center justify-between" style="width: 100%;">
         
         <a href="{{ route('frontend.home') }}" class="nav-brand d-flex align-items-center text-decoration-none" style="gap: 10px;">
-            @if(!empty($settings['app_logo_light']))
-                <img src="{{ Storage::url($settings['app_logo_light']) }}" 
-                     alt="{{ $settings['app_name'] ?? 'ZiExam AI' }}" 
-                     style="height: {{ $settings['header_logo_height'] ?? '34' }}px;">
-            @else
-                <i class="fa-solid fa-layer-group text-primary fa-xl"></i>
-                <div class="d-flex flex-column" style="line-height: 1;">
-                    <span class="fs-5 fw-bold text-primary" style="letter-spacing: -0.5px;">Zi</span>
-                    <span class="fs-5 fw-bold text-dark" style="letter-spacing: -0.5px;">Exam-ai</span>
-                </div>
-            @endif
+            <i class="fa-solid fa-layer-group text-primary fa-xl"></i>
+            <div class="d-flex flex-column" style="line-height: 1;">
+                <span class="fs-5 fw-bold text-primary" style="letter-spacing: -0.5px; font-family: 'Outfit', sans-serif;">Sınav</span>
+                <span class="fs-6 fw-bold text-dark" style="letter-spacing: -0.5px; font-family: 'Outfit', sans-serif; margin-top: 2px;">Center</span>
+            </div>
         </a>
 
         <div class="nav-center d-none d-lg-flex align-items-center gap-4 mx-auto">
